@@ -1,0 +1,56 @@
+#fullForm{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: #0000FF;
+    
+  }
+    .full{
+    width: 100%;
+    margin:1%;
+    margin-left: 1%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+            -45deg, 
+            rgba(59,173,227,1) 0%, 
+            rgba(87,111,230,1) 25%, 
+            rgba(152,68,183,1) 51%, 
+            rgba(255,53,127,1) 100%
+    );  
+    animation: AnimateBG 20s ease infinite;
+    }
+    @keyframes AnimateBG { 
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+      }
+   
+    .lt{
+      position: absolute;
+      top: 50%;
+      height: 100px;
+      margin-top: -50px;
+    }
+    .lt textarea{
+    width: 94%;
+    margin-left: 2.8%;
+    }
+    button{
+    margin: 2%;
+    }
+    .btn-primary{
+    background-color: blue;
+    border: 2px solid white;
+    border-radius: 5%;
+    }
+
+  #pr{
+    font-weight: 300;
+  }
+        
+    
+    

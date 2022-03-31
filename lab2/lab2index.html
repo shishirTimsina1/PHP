@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tip of The Day</title>
+    </head>
+
+    <body>
+        <h1>
+            Tip of The Day
+        </h1>
+        <?php
+        echo "<h3> Here is your Tip: </h3>";
+        ?>
+        <div style =  “border-color:green; border-style: groove; border-width:2px”>
+            <?php
+                readfile("tips.txt");
+            ?>
+        </div>
+    </body>
+    <h1>Source code</h1>
+        
+</html>
