@@ -10,8 +10,8 @@
 <?php
     include 'menu.html';// display menu
 ?>
-    <h1>Source Code main.php</h1>
-    
+    <h1>Source Code on GitHub</h1>
+    <a href="https://github.com/sht99/PHP/tree/main/lab9">GITHUB LINK</a>
 
 </body>
 </html>

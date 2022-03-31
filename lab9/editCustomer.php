@@ -13,6 +13,7 @@
     ?>
     <div id="wrapper">
      <section id="top area">
+         <h2>Customer ID must be in Database</h2>
           <article class="box-right">
                <form action="editData.php" method="post">
                     <p>
