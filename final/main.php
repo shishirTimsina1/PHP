@@ -32,7 +32,7 @@
                         <label for="location">Location</label>
                     </p>
                     <p>
-                         <input value="Submit" type="submit">
+                         <input class = "btn btn-dark" value="Submit" type="submit">
                     </p>
                 </form>
             </article>
@@ -47,7 +47,7 @@
         Sea of Tranquility, Mare Imbrium, Harbinger Mountains, Schiller Crater, Mare Crisium
     <br>
     </div><!-- END MAIN WRAPPER -->
-
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     
 </body>
 </html>

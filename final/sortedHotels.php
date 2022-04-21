@@ -14,7 +14,7 @@
     }
 ?>
 <div style="text-align: center;">
-    <h1>Hotels</h1> <a href="seeHotels.php">Sort by Price (Descending)</a>
+    <h1>Hotels</h1> <a class= "btn btn-dark" href="seeHotels.php">Sort by Price (Descending)</a>
 
     <?php
         require_once 'login.php';
