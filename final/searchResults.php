@@ -8,6 +8,13 @@
 </head>
 <body>
 <?php //usedata.php
+
+    function test_input($data){
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
     include 'menu.html';
         require_once 'login.php';
 
@@ -16,6 +23,7 @@
     //Get values from form
     
     $Fname = $_POST['firstName'];
+    $Fname = test_input($Fname);
     //insert data into mysql
     $query = "SELECT * FROM customer as x
     WHERE x.firstName = '$Fname'";
@@ -54,6 +62,7 @@
 
     //close mysql - replaced $link with $conn
     mysqli_close($conn);
-    ?>
+?>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>

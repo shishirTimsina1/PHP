@@ -8,6 +8,12 @@
 </head>
 <body>
 <?php //usedata.php
+    function test_input($data){
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
     include 'menu.html';
     require_once 'login.php';
 
@@ -16,6 +22,7 @@
     //Get values from form
     
     $uInput = $_POST['userInput'];
+    $uInput = test_input($uInput);
     $uChoice = $_POST['fav_language'];
     
 

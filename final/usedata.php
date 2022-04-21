@@ -8,6 +8,12 @@
 </head>
 <body>
     <?php //usedata.php
+    function test_input($data){
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
     include 'menu.html';
         require_once 'login.php';
 
@@ -25,6 +31,21 @@
     $userID = $_POST['userID'];
     $password = $_POST['password'];
     $sID = $_POST['salesPersonID'];
+
+    $cID = test_input($cID);
+    $Fname = test_input($Fname);
+    $Lname = test_input($Lname);
+    $stAddy1 = test_input($stAddy1);
+    $city = test_input($city);
+    $stateAbbr = test_input($stateAbbr);
+    $postalCode = test_input($postalCode);
+    $email = test_input($email);
+    $userID = test_input($userID);
+    $password = test_input($password);
+    $sID = test_input($sID);
+
+    
+
 
     //insert data into mysql
     $query = "INSERT INTO customer(customerID, lastName, firstName, stAddy1, stAddy2, city, stateAbbr, postalCode,country, email,homePhone,facebookURL,cellPhone, userID, userPassword, salesPersonID)
