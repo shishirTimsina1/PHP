@@ -1,0 +1,3 @@
+Utilizes SQL, PHP, HTML, CSS to create a theoritical travel assitant to the Moon.
+Search possible Hotels, Tours, Events on the moon.
+Sign up/register...
